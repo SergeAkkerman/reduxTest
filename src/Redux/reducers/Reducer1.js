@@ -1,16 +1,18 @@
-import { SHOW_TEXT1 } from "../actionTypes";
+import { SHOW_TEXT_ONE } from "../actionTypes";
 
 const initialState = {
-	text: "WITHOUT TEXT 1"
+	text: "WITHOUT TEXT 1",
+	id: ""
 };
 
 const text1 = (state = initialState, action) => {
 	switch(action.type){
-		case SHOW_TEXT1: {
+		case SHOW_TEXT_ONE: {
 			const { id, content } = action.payload;
 			return {
 				...state,
-				text: [...state.text, id]
+				text: content,
+				id: id
 			}
 		}
 		default:

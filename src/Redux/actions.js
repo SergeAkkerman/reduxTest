@@ -1,20 +1,21 @@
-import { SHOW_TEXT1, SHOW_TEXT2 } from "./actionTypes";
+import { SHOW_TEXT_ONE, SHOW_TEXT_TWO } from "./actionTypes";
 
-const text1 = "THIS IS TEXT1";
-const text2 = "THIS IS TEXT2";
+const idText1 = "idText1234";
+const idText2 = "idText23456";
+
 
 export const addText1 = content => ({
-	type: SHOW_TEXT1,
+	type: SHOW_TEXT_ONE,
 	payload: {
-		id: text1,
+		id: idText1,
 		content
 	}
-})
+});
 
 export const addText2 = content => ({
-	type: SHOW_TEXT2,
+	type: SHOW_TEXT_TWO,
 	payload: {
-		id: text2,
+		id: idText2,
 		content
 	}
-})
+});
