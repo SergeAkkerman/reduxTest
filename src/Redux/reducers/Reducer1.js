@@ -1,8 +1,8 @@
 import { SHOW_TEXT_ONE } from "../actionTypes";
 
 const initialState = {
-	text: "WITHOUT TEXT 1",
-	id: ""
+	texts: [],
+	ids: []
 };
 
 const text1 = (state = initialState, action) => {
@@ -11,10 +11,11 @@ const text1 = (state = initialState, action) => {
 			const { id, content } = action.payload;
 			return {
 				...state,
-				text: content,
-				id: id
+				texts: [...state.texts, content],
+				ids: [...state.ids, id]
 			}
 		}
+		
 		default:
 		return state;
 	}

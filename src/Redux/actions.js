@@ -12,10 +12,10 @@ export const addText1 = content => ({
 	}
 });
 
-export const addText2 = content => ({
+export const addText2 = content2 => ({
 	type: SHOW_TEXT_TWO,
 	payload: {
 		id: idText2,
-		content
+		content2
 	}
 });
