@@ -8,9 +8,10 @@ import Show_text3 from './ShowText_3_button';
 function App() {
   return (
     <div className="App">
-      <Show_text1 />
-      <Show_text2 />
+          <Show_text2 />
       <Show_text3 />
+      <Show_text1 />
+
       <ShowText />
     </div>
   );

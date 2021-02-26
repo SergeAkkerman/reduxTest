@@ -1,17 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 
-const ShowText = ({result}) => (
+const ShowText = ({state}) => (
 	<div>
-	AAA
+	AAAA
 	</div>
 	)
 
 const mapStateToProps = state => {
-	const { text1 } = state;
-	const result = text1;
-	console.log(result);
-	return { result };	
+	//const { text1, text2, text3 } = state;
+	//const result = text2;
+	console.log(state);
+	return {state};	
 }
 
 export default connect(mapStateToProps)(ShowText);

@@ -7,13 +7,13 @@ const initialState = {
 	ids: []
 };
 
-const text2_reducer = (state = initialState, action) => {
+const text1_reducer = (state = initialState, action) => {
 	switch(action.type){
-		case SHOW_TEXT_TWO: {
-			const { id, content } = action.payload;
+		case SHOW_TEXT_ONE: {
+			const { id, content1 } = action.payload;
 			return {
 				...state,
-				texts: [...state.texts, content],
+				texts: [...state.texts, content1],
 				ids: [...state.ids, id]
 			}
 		}
@@ -23,4 +23,4 @@ const text2_reducer = (state = initialState, action) => {
 	}
 }
 
-export default text2_reducer;
+export default text1_reducer;

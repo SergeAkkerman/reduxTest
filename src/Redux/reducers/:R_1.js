@@ -10,10 +10,10 @@ const initialState = {
 const text1_reducer = (state = initialState, action) => {
 	switch(action.type){
 		case SHOW_TEXT_ONE: {
-			const { id, content } = action.payload;
+			const { id, content1 } = action.payload;
 			return {
 				...state,
-				texts: [...state.texts, content],
+				texts: [...state.texts, content1],
 				ids: [...state.ids, id]
 			}
 		}
