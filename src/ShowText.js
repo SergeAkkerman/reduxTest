@@ -10,7 +10,16 @@ const ShowText = ({state}) => (
 const mapStateToProps = state => {
 	//const { text1, text2, text3 } = state;
 	//const result = text2;
-	console.log(state);
+	var y = [];
+	for (var i in state) {
+		y = state[i].texts;
+
+	}
+			console.log (y);
+	//console.log(Object.keys(state));
+	//console.log(state);
+
+
 	return {state};	
 }
 
