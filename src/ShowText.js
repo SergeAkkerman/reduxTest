@@ -8,17 +8,10 @@ const ShowText = ({state}) => (
 	)
 
 const mapStateToProps = state => {
-	//const { text1, text2, text3 } = state;
-	//const result = text2;
-	var y = [];
-	for (var i in state) {
-		y = state[i].texts;
-
-	}
-			console.log (y);
-	//console.log(Object.keys(state));
-	//console.log(state);
-
+	var result = Object.keys(state).flatMap(function(key) {
+		return state[key].texts;
+	})
+	console.log(result);
 
 	return {state};	
 }
